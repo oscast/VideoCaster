@@ -28,9 +28,11 @@ struct VideoCasterApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
+    let sessionManager = GCKCastContext.sharedInstance().sessionManager
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            HomeView(viewModel: VideoCasterViewModel(sessionManager: sessionManager))
         }
     }
 }
