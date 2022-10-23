@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6613FDAD85FB3754A4771D7E /* Pods_VideoCaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BBA3BAE846A206C675A9E2 /* Pods_VideoCaster.framework */; };
+		F237060A2905F90A0000568D /* Videos.json in Resources */ = {isa = PBXBuildFile; fileRef = F23706092905F90A0000568D /* Videos.json */; };
 		F28BFCB12904161900408E04 /* VideoCasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BFCB02904161900408E04 /* VideoCasterApp.swift */; };
-		F28BFCB32904161900408E04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BFCB22904161900408E04 /* ContentView.swift */; };
+		F28BFCB32904161900408E04 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BFCB22904161900408E04 /* HomeView.swift */; };
 		F28BFCB52904161B00408E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28BFCB42904161B00408E04 /* Assets.xcassets */; };
 		F28BFCB82904161B00408E04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28BFCB72904161B00408E04 /* Preview Assets.xcassets */; };
 		F28BFCBF2904169900408E04 /* CastButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28BFCBE2904169900408E04 /* CastButton.swift */; };
@@ -20,9 +21,10 @@
 		A3F9EDB3DD718712E59739AF /* Pods-VideoCaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCaster.release.xcconfig"; path = "Target Support Files/Pods-VideoCaster/Pods-VideoCaster.release.xcconfig"; sourceTree = "<group>"; };
 		B9BE14BB3E305B0B2026EA1C /* Pods-VideoCaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCaster.debug.xcconfig"; path = "Target Support Files/Pods-VideoCaster/Pods-VideoCaster.debug.xcconfig"; sourceTree = "<group>"; };
 		F23706052905BB2F0000568D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F23706092905F90A0000568D /* Videos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Videos.json; sourceTree = "<group>"; };
 		F28BFCAD2904161900408E04 /* VideoCaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoCaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28BFCB02904161900408E04 /* VideoCasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCasterApp.swift; sourceTree = "<group>"; };
-		F28BFCB22904161900408E04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F28BFCB22904161900408E04 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F28BFCB42904161B00408E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F28BFCB72904161B00408E04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F28BFCBE2904169900408E04 /* CastButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastButton.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F23706082905F8F90000568D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F23706092905F90A0000568D /* Videos.json */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		F28BFCA42904161900408E04 = {
 			isa = PBXGroup;
 			children = (
@@ -78,9 +88,10 @@
 		F28BFCAF2904161900408E04 /* VideoCaster */ = {
 			isa = PBXGroup;
 			children = (
+				F23706082905F8F90000568D /* Utils */,
 				F23706052905BB2F0000568D /* Info.plist */,
 				F28BFCB02904161900408E04 /* VideoCasterApp.swift */,
-				F28BFCB22904161900408E04 /* ContentView.swift */,
+				F28BFCB22904161900408E04 /* HomeView.swift */,
 				F28BFCB42904161B00408E04 /* Assets.xcassets */,
 				F28BFCB62904161B00408E04 /* Preview Content */,
 				F28BFCBE2904169900408E04 /* CastButton.swift */,
@@ -158,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28BFCB82904161B00408E04 /* Preview Assets.xcassets in Resources */,
+				F237060A2905F90A0000568D /* Videos.json in Resources */,
 				F28BFCB52904161B00408E04 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F28BFCB32904161900408E04 /* ContentView.swift in Sources */,
+				F28BFCB32904161900408E04 /* HomeView.swift in Sources */,
 				F28BFCBF2904169900408E04 /* CastButton.swift in Sources */,
 				F28BFCB12904161900408E04 /* VideoCasterApp.swift in Sources */,
 			);
