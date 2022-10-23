@@ -1,0 +1,23 @@
+PODS:
+  - google-cast-sdk-no-bluetooth (4.7.0):
+    - google-cast-sdk-no-bluetooth/Core (= 4.7.0)
+    - Protobuf (~> 3.13)
+  - google-cast-sdk-no-bluetooth/Core (4.7.0):
+    - Protobuf (~> 3.13)
+  - Protobuf (3.21.5)
+
+DEPENDENCIES:
+  - google-cast-sdk-no-bluetooth
+
+SPEC REPOS:
+  trunk:
+    - google-cast-sdk-no-bluetooth
+    - Protobuf
+
+SPEC CHECKSUMS:
+  google-cast-sdk-no-bluetooth: 5313156110d6e71fa336f6d742f1ee641e91fdca
+  Protobuf: 7504b04fffcf6662ad629694db8231f5e744327f
+
+PODFILE CHECKSUM: 3908b7153128cc5031e2730f841f62a0491695af
+
+COCOAPODS: 1.11.3
