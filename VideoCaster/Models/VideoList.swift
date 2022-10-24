@@ -13,13 +13,21 @@ struct VideoList: Codable {
 }
 
 // MARK: - Category
-struct Category: Codable {
+struct Category: Codable, Identifiable {
+    var id: String = UUID().uuidString
     let name: String
     let videos: [Video]
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.videos = try container.decode([Video].self, forKey: .videos)
+    }
 }
 
 // MARK: - Video
-struct Video: Codable {
+struct Video: Codable, Identifiable {
+    var id: String = UUID().uuidString
     let videoDescription: String
     let sources: [String]
     let subtitle: Subtitle
@@ -28,6 +36,15 @@ struct Video: Codable {
     enum CodingKeys: String, CodingKey {
         case videoDescription = "description"
         case sources, subtitle, thumb, title
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.videoDescription = try container.decode(String.self, forKey: .videoDescription)
+        self.sources = try container.decode([String].self, forKey: .sources)
+        self.subtitle = try container.decode(Subtitle.self, forKey: .subtitle)
+        self.thumb = try container.decode(String.self, forKey: .thumb)
+        self.title = try container.decode(String.self, forKey: .title)
     }
 }
 

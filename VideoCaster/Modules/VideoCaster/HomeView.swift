@@ -10,18 +10,49 @@ import GoogleCast
 
 struct HomeView: View {
     
-    let viewModel: VideoCasterViewModel
+    @ObservedObject var viewModel: VideoCasterViewModel
     
     init(viewModel: VideoCasterViewModel) {
         self.viewModel = viewModel
     }
     
     var body: some View {
-        VStack {
-            CastButtonRepresentable()
-            Spacer()
+        NavigationView {
+            ScrollView {
+                VStack {
+                    ForEach(viewModel.categories) { category in
+                        HStack {
+                            Text(category.name)
+                            Spacer()
+                        }
+                        .padding()
+                        
+                        ForEach(category.videos) { video in
+                            HStack {
+                                Image(video.thumb)
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                
+                                Text(video.title)
+                                
+                                Spacer()
+                            }
+                        }
+                        .padding()
+                        
+                    }
+                    Spacer()
+                }
+                .navigationTitle("Welcome")
+                .toolbar {
+                    CastButtonRepresentable()
+                        .padding(.trailing, 16)
+                }
+            }
         }
-        .padding()
+        .onAppear {
+            viewModel.LoadVideos()
+        }
     }
 }
 

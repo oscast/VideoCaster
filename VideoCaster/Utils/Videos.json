@@ -9,7 +9,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
           ],
           "subtitle": "By Blender Foundation",
-          "thumb": "BigBuckBunny.jpg",
+          "thumb": "BigBuckBunny",
           "title": "Big Buck Bunny"
         },
         {
@@ -18,7 +18,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
           ],
           "subtitle": "By Blender Foundation",
-          "thumb": "ElephantsDream.jpg",
+          "thumb": "ElephantsDream",
           "title": "Elephant Dream"
         },
         {
@@ -27,7 +27,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
           ],
           "subtitle": "By Google",
-          "thumb": "ForBiggerBlazes.jpg",
+          "thumb": "ForBiggerBlazes",
           "title": "For Bigger Blazes"
         },
         {
@@ -36,7 +36,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
           ],
           "subtitle": "By Google",
-          "thumb": "ForBiggerEscapes.jpg",
+          "thumb": "ForBiggerEscapes",
           "title": "For Bigger Escape"
         },
         {
@@ -45,7 +45,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
           ],
           "subtitle": "By Google",
-          "thumb": "ForBiggerFun.jpg",
+          "thumb": "ForBiggerFun",
           "title": "For Bigger Fun"
         },
         {
@@ -54,7 +54,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
           ],
           "subtitle": "By Google",
-          "thumb": "ForBiggerJoyrides.jpg",
+          "thumb": "ForBiggerJoyrides",
           "title": "For Bigger Joyrides"
         },
         {
@@ -63,7 +63,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
           ],
           "subtitle": "By Google",
-          "thumb": "ForBiggerMeltdowns.jpg",
+          "thumb": "ForBiggerMeltdowns",
           "title": "For Bigger Meltdowns"
         },
         {
@@ -72,7 +72,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
           ],
           "subtitle": "By Blender Foundation",
-          "thumb": "Sintel.jpg",
+          "thumb": "Sintel",
           "title": "Sintel"
         },
         {
@@ -81,7 +81,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
           ],
           "subtitle": "By Garage419",
-          "thumb": "SubaruOutbackOnStreetAndDirt.jpg",
+          "thumb": "SubaruOutbackOnStreetAndDirt",
           "title": "Subaru Outback On Street And Dirt"
         },
         {
@@ -90,7 +90,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
           ],
           "subtitle": "By Blender Foundation",
-          "thumb": "TearsOfSteel.jpg",
+          "thumb": "TearsOfSteel",
           "title": "Tears of Steel"
         },
         {
@@ -99,7 +99,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"
           ],
           "subtitle": "By Garage419",
-          "thumb": "VolkswagenGTIReview.jpg",
+          "thumb": "VolkswagenGTIReview",
           "title": "Volkswagen GTI Review"
         },
         {
@@ -108,7 +108,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
           ],
           "subtitle": "By Garage419",
-          "thumb": "WeAreGoingOnBullrun.jpg",
+          "thumb": "WeAreGoingOnBullrun",
           "title": "We Are Going On Bullrun"
         },
         {
@@ -117,7 +117,7 @@
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
           ],
           "subtitle": "By Garage419",
-          "thumb": "WhatCarCanYouGetForAGrand.jpg",
+          "thumb": "WhatCarCanYouGetForAGrand",
           "title": "What care can you get for a grand?"
         }
       ]
