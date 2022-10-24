@@ -11,11 +11,10 @@ import GoogleCast
 class VideoDetailViewModel: NSObject, ObservableObject, GCKSessionManagerListener, GCKRequestDelegate {
     
     let video: Video
-    let sessionManager: GCKSessionManager
+    let sessionManager: GCKSessionManager = GCKCastContext.sharedInstance().sessionManager
     
-    init(video: Video, sessionManager: GCKSessionManager) {
+    init(video: Video) {
         self.video = video
-        self.sessionManager = sessionManager
     }
     
     func castVideo() {

@@ -12,6 +12,8 @@ struct HomeView: View {
     
     @ObservedObject var viewModel: VideoCasterViewModel
     
+    @State var showVideo: Bool = false
+    
     init(viewModel: VideoCasterViewModel) {
         self.viewModel = viewModel
     }
@@ -19,7 +21,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack {
+                VStack(alignment: .leading) {
                     ForEach(viewModel.categories) { category in
                         HStack {
                             Text(category.name)
@@ -29,26 +31,29 @@ struct HomeView: View {
                         .padding()
                         
                         ForEach(category.videos) { video in
-                            HStack {
-                                AsyncImage(url: URL(string: video.thumb), content: { image in
-                                    image
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 100, height: 80)
-                                }, placeholder: {
-                                    Image("placeholder")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 100, height: 80)
+                            NavigationLink(
+                                destination: VideoDetailView(viewModel: VideoDetailViewModel(video: video)), label: {
+                                    HStack(spacing: 16) {
+                                        AsyncImage(url: URL(string: video.thumb), content: { image in
+                                            image
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 100, height: 80)
+                                        }, placeholder: {
+                                            Image("placeholder")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 100, height: 80)
+                                        })
+                                        
+                                        Text(video.title)
+                                            .font(.title3)
+                                            .multilineTextAlignment(.leading)
+                                        
+                                        Spacer()
+                                    }
+                                    
                                 })
-                                
-                                Text(video.title)
-                                
-                                Spacer()
-                            }
-                            .onTapGesture {
-                                viewModel.cast(video: video)
-                            }
                         }
                         .padding()
                         

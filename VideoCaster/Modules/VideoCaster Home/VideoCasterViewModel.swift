@@ -12,6 +12,8 @@ class VideoCasterViewModel: NSObject, ObservableObject, GCKRequestDelegate, GCKS
     
     @Published var categories: [Category] = []
     
+    var selectedVideo: Video?
+    
     var sessionManager: GCKSessionManager
     
     init(sessionManager: GCKSessionManager) {
