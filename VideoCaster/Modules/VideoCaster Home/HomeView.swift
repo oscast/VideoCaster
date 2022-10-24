@@ -30,9 +30,17 @@ struct HomeView: View {
                         
                         ForEach(category.videos) { video in
                             HStack {
-                                Image(video.thumb)
-                                    .resizable()
-                                    .frame(width: 100, height: 100)
+                                AsyncImage(url: URL(string: video.thumb), content: { image in
+                                    image
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 100, height: 80)
+                                }, placeholder: {
+                                    Image("placeholder")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 100, height: 80)
+                                })
                                 
                                 Text(video.title)
                                 
