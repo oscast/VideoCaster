@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6613FDAD85FB3754A4771D7E /* Pods_VideoCaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BBA3BAE846A206C675A9E2 /* Pods_VideoCaster.framework */; };
+		F213CD4E29070F9B005FDF35 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F213CD4D29070F9B005FDF35 /* VideoDetailView.swift */; };
+		F213CD5029070FAF005FDF35 /* VideoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F213CD4F29070FAF005FDF35 /* VideoDetailViewModel.swift */; };
 		F237060A2905F90A0000568D /* Videos.json in Resources */ = {isa = PBXBuildFile; fileRef = F23706092905F90A0000568D /* Videos.json */; };
 		F237060E290608410000568D /* VideoCasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237060D290608410000568D /* VideoCasterViewModel.swift */; };
 		F237061129060D400000568D /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237061029060D400000568D /* VideoList.swift */; };
@@ -22,6 +24,8 @@
 		79BBA3BAE846A206C675A9E2 /* Pods_VideoCaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoCaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F9EDB3DD718712E59739AF /* Pods-VideoCaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCaster.release.xcconfig"; path = "Target Support Files/Pods-VideoCaster/Pods-VideoCaster.release.xcconfig"; sourceTree = "<group>"; };
 		B9BE14BB3E305B0B2026EA1C /* Pods-VideoCaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCaster.debug.xcconfig"; path = "Target Support Files/Pods-VideoCaster/Pods-VideoCaster.debug.xcconfig"; sourceTree = "<group>"; };
+		F213CD4D29070F9B005FDF35 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
+		F213CD4F29070FAF005FDF35 /* VideoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewModel.swift; sourceTree = "<group>"; };
 		F23706052905BB2F0000568D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F23706092905F90A0000568D /* Videos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Videos.json; sourceTree = "<group>"; };
 		F237060D290608410000568D /* VideoCasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCasterViewModel.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F213CD4C29070F8E005FDF35 /* VideoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F213CD4D29070F9B005FDF35 /* VideoDetailView.swift */,
+				F213CD4F29070FAF005FDF35 /* VideoDetailViewModel.swift */,
+			);
+			path = VideoDetail;
+			sourceTree = "<group>";
+		};
 		F23706082905F8F90000568D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +87,7 @@
 		F237060B290608190000568D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F213CD4C29070F8E005FDF35 /* VideoDetail */,
 				F237060C290608230000568D /* VideoCaster Home */,
 			);
 			path = Modules;
@@ -271,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F237061129060D400000568D /* VideoList.swift in Sources */,
+				F213CD4E29070F9B005FDF35 /* VideoDetailView.swift in Sources */,
 				F28BFCB32904161900408E04 /* HomeView.swift in Sources */,
+				F213CD5029070FAF005FDF35 /* VideoDetailViewModel.swift in Sources */,
 				F28BFCBF2904169900408E04 /* CastButton.swift in Sources */,
 				F237060E290608410000568D /* VideoCasterViewModel.swift in Sources */,
 				F28BFCB12904161900408E04 /* VideoCasterApp.swift in Sources */,
