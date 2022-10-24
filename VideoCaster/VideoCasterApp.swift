@@ -18,7 +18,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, GCKLoggerDelegate {
         let options = GCKCastOptions(discoveryCriteria: criteria)
         GCKCastContext.setSharedInstanceWith(options)
         GCKLogger.sharedInstance().delegate = self
-        
+
         return true
     }
 }

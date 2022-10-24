@@ -74,18 +74,18 @@
 		F237060B290608190000568D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F237060C290608230000568D /* VideoCaster */,
+				F237060C290608230000568D /* VideoCaster Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		F237060C290608230000568D /* VideoCaster */ = {
+		F237060C290608230000568D /* VideoCaster Home */ = {
 			isa = PBXGroup;
 			children = (
 				F28BFCB22904161900408E04 /* HomeView.swift */,
 				F237060D290608410000568D /* VideoCasterViewModel.swift */,
 			);
-			path = VideoCaster;
+			path = "VideoCaster Home";
 			sourceTree = "<group>";
 		};
 		F237060F29060BD00000568D /* Models */ = {

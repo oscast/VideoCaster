@@ -23,6 +23,7 @@ struct HomeView: View {
                     ForEach(viewModel.categories) { category in
                         HStack {
                             Text(category.name)
+                                .font(.title)
                             Spacer()
                         }
                         .padding()
@@ -37,13 +38,16 @@ struct HomeView: View {
                                 
                                 Spacer()
                             }
+                            .onTapGesture {
+                                viewModel.cast(video: video)
+                            }
                         }
                         .padding()
                         
                     }
                     Spacer()
                 }
-                .navigationTitle("Welcome")
+                .navigationTitle("Video Caster Max")
                 .toolbar {
                     CastButtonRepresentable()
                         .padding(.trailing, 16)
@@ -56,7 +60,7 @@ struct HomeView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         let viewModel =
         VideoCasterViewModel(
