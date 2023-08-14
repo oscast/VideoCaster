@@ -19,7 +19,6 @@ class VideoDetailViewModel: NSObject, ObservableObject, GCKSessionManagerListene
     }
     
     func castVideo() {
-        let castContext = GCKCastContext.sharedInstance()
         miniMediaControlsViewController?.delegate = self
         
         sessionManager.add(self)
@@ -49,6 +48,5 @@ class VideoDetailViewModel: NSObject, ObservableObject, GCKSessionManagerListene
 
 extension VideoDetailViewModel: GCKUIMiniMediaControlsViewControllerDelegate {
     func miniMediaControlsViewController(_ miniMediaControlsViewController: GCKUIMiniMediaControlsViewController, shouldAppear: Bool) {
-        true
     }
 }

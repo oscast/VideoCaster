@@ -32,9 +32,9 @@ struct HomeView: View {
                             HStack {
                                 AsyncImage(url: URL(string: video.thumb), content: { image in
                                     image
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 80)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 100, height: 80)
                                 }, placeholder: {
                                     Image("placeholder")
                                         .resizable()
