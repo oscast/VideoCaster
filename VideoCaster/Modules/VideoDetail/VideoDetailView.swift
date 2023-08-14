@@ -18,27 +18,37 @@ struct VideoDetailView: View {
     
     var body: some View {
         ZStack {
+            Color.black
+                .ignoresSafeArea()
             VStack {
-                AsyncImage(url: URL(string: viewModel.video.thumb), content: { image in
-                    image
-                        .resizable()
-                        .frame(maxWidth: .infinity)
-                        .frame(height: screenWidth / 16.0 * 9.0)
-                }, placeholder: {
-                    Image("placeholder")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 100, height: 80)
-                })
+                ScrollView {
+                    VStack {
+                        AsyncImage(url: URL(string: viewModel.video.thumb), content: { image in
+                            image
+                                .resizable()
+                                .frame(maxWidth: .infinity)
+                                .frame(height: screenWidth / 16.0 * 9.0)
+                        }, placeholder: {
+                            Image("placeholder")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100, height: 80)
+                        })
 
-                Text(viewModel.video.title)
-                    .font(.largeTitle)
+                        Text(viewModel.video.title)
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                            .padding()
+                        Text(viewModel.video.videoDescription)
+                            .font(.body)
+                            .foregroundColor(.white)
+                        Spacer()
+                    }
                     .padding()
-                Text(viewModel.video.videoDescription)
-                    .font(.body)
-                Spacer()
+                }
+                .frame(width: screenWidth, height: screenWidth)
+                VideoControlView()
             }
-            .padding()
         }
     }
 }
